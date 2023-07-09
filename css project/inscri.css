@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+}
+.card-title{
+    color:  #4070F2;
+}
+input{
+    height: 45px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-1,.content-2{
+    width: 400px;
+    margin: 16px;
+     
+}
+label{
+    font-size: 20px;
+    font-weight: 200;
+}
+label span{
+    font-size: 14px;
+}
+.p-title{
+    font-weight: 300;
+}
+.p-title a{
+    color:  #1842b4;
+}
+.p-form{
+    font-weight: 200;
+    color: red;
+}
+.btns{
+    width: 400px;
+    margin: auto;
+}
+.btns .btn-1{
+    width: 100%;
+    color: #fff;
+    background-color:  #4070F2;
+}
+.btns .btn-1:hover{
+    background-color:  #2855d2;
+
+}
+.btns .btn-2{
+    width: 100%;
+    color: #fff;
+    margin-top: 16px;
+    background-color:#CCC;
+}
+.btns .btn-2:hover{
+    background-color:#acacac;
+
+}
+@media ( max-width:770px) {
+    .card-title{
+        font-size: 35px;
+    }
+    label{
+        font-size: 18px;
+    }
+    input{
+        height: 40px;
+    }
+    label span{
+        font-size: 12px;
+    }
+    .p-title{
+        font-size: 14px;
+    }
+    .btns{
+        width: 340px;
+        margin: auto;
+    }
+}
+@media ( max-width:550px) {
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card-title{
+        font-size: 30px;
+    }
+    label{
+        font-size: 17px;
+        margin-left: 65px;
+
+    }
+    input{
+        width:270px !important ;
+        margin-left: 65px;
+    }
+    .btns{
+        width: 250px;
+        margin: auto;
+    }
+}
+@media ( max-width:280px) {
+    input{
+        margin-left: 75px;
+    }
+    label{
+        margin-left: 75px;
+
+    }
+
+}

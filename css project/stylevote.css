@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+    width: 100%;
+}
+header .logo{
+    width: 80px;
+    height:  auto;
+    margin-top: 10px;
+}
+header{
+    width: 100%;
+    height: 65px;
+    background-color: rgb(228, 228, 231);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+}
+.mode-dark{
+    background-color: #333232;
+    transition: .2s;
+}
+.icon i{
+    font-size: 30px;
+    margin-left: 10px;
+    cursor:pointer;
+    border-radius: 100%;
+}
+.icon-menu{
+    display: none;
+}
+.icon i:hover{
+    color: #04AA6d;
+}
+.btn-user{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transform: translate(-50px,0);
+}
+.btn-user:focus{
+    border: none;
+    outline: none;
+}
+.btn-user i{
+    font-size:40px ;
+    cursor:pointer;
+    color:#04AA6d;
+    transition: .3s;
+}
+.btn-user i:hover{
+    transform: scale(1.3);
+}
+.nav li{
+    margin-right: 20px;
+    transition: .3s;
+    position: relative;
+}
+.nav li::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background-color: #04AA6d;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+}
+.nav li:hover::after{
+    width: 100%;
+}
+.nav{
+    transform: translate(60px,0);
+}
+.nav li a{
+    color: black;
+    font-size: 26px;
+    text-decoration: none;
+    font-variant-caps: small-caps;
+    font-family: 'Poppins';
+}
+.nav li a:hover{
+    color:#04AA6d;
+}
+.page-1{
+    width: 100%;
+    height: 100vh;
+    
+}
+.container{
+    position: relative;
+}
+.container .title h2{
+    transform: translate(0px,100px);
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.content{
+    display: flex;
+   justify-content: center;
+   position: absolute;
+   top: 310px;
+}
+.content .carde{
+    width: 320px;
+    height: 400px;
+    background-color: #e4e3e3;
+    text-align: center;
+     
+    position: relative;
+    border-radius: 20px;
+    margin-right: 80px;
+    
+ }
+ .content .carde .image-card img{
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 140px;
+    min-height: 140px;
+     object-fit: cover;
+     background-size: cover;
+ }
+
+ .carde h3{
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 400;
+ }
+ .carde p{
+    font-size: 18px;
+    font-weight: 300;
+
+ }
+ .carde h4{
+    font-weight: 300;
+    letter-spacing: 2px;
+    
+ }
+ .icons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    margin-top: 10px;
+ }
+ .head{
+    background-color: #394bed;
+    height: 180px;
+    border-radius: 15px ;
+    padding-top: 20px;
+ }
+ .icons img{
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+    transition: .2s ease;
+    cursor: pointer;
+ }
+ .icons img:hover{
+    transform: scale(1.3);
+ }
+ .bttn .btn-1,.btn-2{
+    width: 110px;
+    border: none;
+    background-color: #3a4ced;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    margin-left:10px;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+    }
+    .bttn .btn-1:focus,.btn-2:focus{
+    outline: none;
+    }
+    .bttn .btn-1:hover,.btn-2:hover{
+    background-color: #1322a7;
+    }
+    .date{
+        position: absolute;
+        left: 50%;
+        top: 180px;
+        transform: translate(-50%,0);
+        border: 2px solid #394bed;
+        padding:0 10px;
+        background-color: #f1eeee;
+        border-radius: 15px;
+        margin-right: 10px;
+    }
+    .date span{
+        font-size: 43px;
+         
+        color: #394bed;
+        margin-left: 10px;
+    }
+    .date .minutes {
+        margin-left: 20px;
+    }
+     .date .seconds{
+        margin-left: 30px;
+     }
+    .date p{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .date .d,.date .h,.date .m,.date .s{
+         margin-left: 14px;
+        font-size: 18px;
+    }
+    .date .s{
+        margin-left: 10px;
+        font-size: 18px;
+    }
